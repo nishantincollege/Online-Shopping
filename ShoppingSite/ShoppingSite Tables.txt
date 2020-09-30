@@ -1,7 +1,6 @@
 Create Database ShoppingData;
 
-use ShoppingData;
-
+use ShoppingData; //DataBase Modification
 
 
 Create table AdminLoginTab
