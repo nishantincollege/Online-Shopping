@@ -51,7 +51,7 @@ function v()
 
     </head>
     <body background="images/back2.bmp">
-<A href="adminmainpage1.jsp"><input type="button" id="button1" value="Admin Main" style="cursor: pointer; height: 30px; width: 100px; background-color: black; color:red;"></A> <BR> 
+<A href="adminmainpage1.jsp"><input type="button" id="button1" value="Admin Main" style="cursor: pointer; height: 31px; width: 100px; background-color: black; color:blue;"></A> <BR> 
 
     <center>
         
