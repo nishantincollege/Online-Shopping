@@ -1,0 +1,108 @@
+Create Database ShoppingData;
+
+use ShoppingData;
+
+
+
+Create table AdminLoginTab
+(uName varchar(50),
+pWord varchar(50));
+
+insert into adminLogintab values('admin','admin');
+
+
+Create table QualificationTab
+(edName varchar(50),
+details varchar(50));
+
+Create table ProfessionTab
+(jobName varchar(50),
+details varchar(50));
+
+Create table FAQTab
+(qno int,
+question varchar(250),
+Answer varchar(250));
+
+Insert into faqtab(qno) values(1000);
+
+
+
+Create table CategoryTab
+(CategoryName varchar(50),
+details varchar(50));
+
+Create table ProductTab
+(Prodcode varchar(50),
+prodName  varchar(50),
+details  varchar(250),
+category  varchar(50),
+sprice int,
+remarks varchar(50));
+
+
+
+Create table StateTab
+(StateName varchar(50),
+details varchar(50));
+
+
+Create table CityTab
+(cityName varchar(50),
+details varchar(50),
+statename varchar(50));
+
+
+
+
+Create table CustDetTab
+(uName varchar(50) primary key,
+pWord varchar(50),
+custName varchar(50),
+cAdd varchar(250),
+cityname varchar(50),
+statename  varchar(50),
+phonenos  varchar(50),
+email  varchar(50),
+qualification  varchar(50),
+designation  varchar(50),
+approved varchar(1));
+
+
+
+
+
+Create table tCartTab
+(sId varchar(50),
+custcode  varchar(50),
+productCode varchar(50),
+qty int,
+price int,
+totamt int);
+
+
+
+Create table mCartTab
+(billNo int,
+billDate date,
+slNo int,
+custcode  varchar(50),
+productCode varchar(50),
+qty int,
+price int,
+totamt int);
+
+insert into mCartTab(billNo) values(1000);
+
+
+Create table PayDetTab
+(billNo varchar(50),
+custcode  varchar(50),
+ptype  varchar(50),
+carddet   varchar(250),
+deldet   varchar(250));
+
+
+select * from tcarttab;
+select * from mcarttab;
+show tables;
